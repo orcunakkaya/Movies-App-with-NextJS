@@ -7,7 +7,7 @@ const imageLoader = ({ src }) => {
 }
 
 function TvCard({ props }) {
-    console.log(props);
+
     return (
         <Link href={`/tv/${props.id}`} passHref>
             <a title={props.original_name} className={styles.tvCard}>
