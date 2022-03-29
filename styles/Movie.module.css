@@ -1,0 +1,79 @@
+.movieDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    row-gap: 1.75rem;
+}
+
+.container{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    padding-bottom: 4rem;
+    color: #DB2777;
+}
+
+.head{
+    color: #AE00FB;
+}
+
+.container > div > span{
+    color: #14FFEC;
+}
+
+.overview{
+    text-indent: 2rem;
+    color: #14FFEC;
+}
+
+.vote > span{
+    color: #F0A500 !important;
+}
+
+.companies{
+    display: flex;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+}
+.companies > span:nth-child(n)::after{
+    content: ',';
+}
+.companies > span:nth-last-child(1)::after{
+    content: '';
+}
+
+.companies, .date, .vote, .movieDuration{
+    font-weight: 600;
+}
+.companies > span, .date > span, .vote > span, .movieDuration > span{
+    font-weight: 400;
+}
+
+.urlContainer{
+    margin-top: .5rem;
+    text-align: center;
+    word-break: break-all;
+}
+.urlContainer > div{
+    color: #14FFEC;
+}
+.urlContainer > a:hover{
+    color: #0070f3;
+}
+@media screen and (max-width:600px) {
+    .movieDetail{
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        font-size: .75rem;
+    }
+    .head{
+        font-size: 1rem;
+    }
+}

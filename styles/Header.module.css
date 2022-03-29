@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    letter-spacing: .2rem;
+}
+
+.icon{
+    transform: rotate(-20deg);
+}
+
+.mediaType{
+    display: flex;
+    column-gap: 2rem;
+    font-size: 1.6rem;
+}
+.mediaType > a{
+    transition: transform 1s;
+    background: linear-gradient(to right,#AE00FB,#DB2777,#14FFEC,#B5FFD9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mediaType > a:hover{
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+@media screen and (max-width: 420px) {
+    .head > h1{
+        font-size: 1.5rem;
+    }
+    .icon{
+        width: 1.5rem;
+    }
+    .mediaType{
+        font-size: 1.5rem;
+    }
+}

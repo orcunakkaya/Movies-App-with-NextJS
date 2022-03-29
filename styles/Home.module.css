@@ -1,0 +1,34 @@
+.movies{
+  margin-top: 5rem;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header{
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #B5FFD9;
+}
+
+.moviesContainer {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+@media screen and (max-width: 610px) {
+  .movies{
+    margin-top: 2rem;
+  }
+  .header{
+    font-size: 1.25rem;
+  }
+  .moviesContainer{
+    padding: 1.5rem 0;
+  }
+}

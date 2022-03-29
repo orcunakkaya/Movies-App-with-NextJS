@@ -1,0 +1,7 @@
+
+@media screen and (max-width: 540px) {
+    .movieCard{
+        width: 130px;
+        height: auto;
+    }    
+}
